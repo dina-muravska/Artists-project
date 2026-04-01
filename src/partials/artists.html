@@ -1,26 +1,36 @@
 <section id="artists" class="artists">
   <div class="container">
-
     <div class="artists__content">
-      
-
-      
-    <div class="artists__text">
-      <h2 class="artists__title">Artists</h2>
-      <h3 class="artists__subtitle">Explore Your New Favorite Artists</h3>
-
+      <div class="artists__text">
+        <h2 class="artists__title">Artists</h2>
+        <h3 class="artists__subtitle">Explore Your New Favorite Artists</h3>
+      </div>
+      <div class="artists__filters">
+        <div class="filters__titles">
+          <p class="filters__title">Filters</p>
+        </div>
+        <input type="text" class="artists__search" placeholder="Search" />
+        <select class="artists__select artists__genre-select">
+          <option value="">All genres</option>
+        </select>
+        <select class="artists__select artists__sort-select">
+          <option value="">Default</option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+        <button class="artists__reset">Reset</button>
+      </div>
+      <ul class="artists__list"></ul>
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
+      <button class="artists__button">
+        Load More
+        <svg class="artists__load-more-icon" width="24" height="24">
+          <use href="./img/icons.svg#icon-down-arrow-alt"></use>
+        </svg>
+      </button>
     </div>
-    <ul class="artists__list"></ul>
-    <div class="loader">
-      <div class="spinner"></div>
-    </div>
-    <button class="artists__button">
-      Load More
-      <svg class="artists__load-more-icon" width="24" height="24">
-        <use href="./img/icons.svg#icon-down-arrow-alt"></use>
-      </svg>
-    </button>
-  </div>
   </div>
   <div id="modal-root" class="modal"></div>
 </section>
