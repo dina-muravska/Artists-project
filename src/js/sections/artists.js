@@ -1,7 +1,7 @@
 import iconArrow from '../../img/icon-right-arrow.png';
 import { getArtistsInfo } from '../api/artists-api';
 const list = document.querySelector('.artists__list');
-
+const artFilter = document.querySelector('.artists__filters');
 export const initArtists = async ({ limit, page }) => {
   return getArtistsInfo({ limit, page });
 };
