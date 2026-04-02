@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtistsHub</title>
+    <script type="module" crossorigin src="/Artists-proj/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/Artists-proj/assets/vendor-Cg2OR-9q.js">
+    <link rel="stylesheet" crossorigin href="/Artists-proj/assets/vendor-fH2XiLov.css">
+    <link rel="stylesheet" crossorigin href="/Artists-proj/assets/index-CY2_PJcC.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <a class="header__logo" href="./index.html" aria-label="Перехід на головну сторінку">
+      <img class="header__logo-img" src="/Artists-proj/assets/Company-Logo-BebIOY5s.svg" alt="Логотип Artists Hub" />
+    </a>
+
+    <nav class="header__nav" aria-label="Головна навігація">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#artists">Artists</a>
+        </li>
+      
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#about">About Us</a>
+        </li>
+      
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="burger" type="button" data-menu-open>
+      <svg class="burger__icon" width="24" height="24">
+        <use href="/Artists-proj/assets/icons-Dy-5T8z3.svg#icon-menu-alt-right"></use>
+      </svg>
+    </button>      
+  </div>        
+</header>
+
+<div class="mobile-menu" data-menu>
+  <div class="mobile-menu__container container">
+  <div class="mobile-menu__header">
+    <a class="mobile-menu__logo" href="./index.html" aria-label="Перехід на головну сторінку">
+      <img class="mobile-menu__logo-img" src="/Artists-proj/assets/Company-Logo-BebIOY5s.svg" alt="Логотип Artists Hub"/>
+    </a>
+
+    <button type="button" class="mobile-menu__close" data-menu-close aria-label="Закрити меню">
+      <svg class="mobile-menu__close-icon" width="24" height="24">
+        <use href="/Artists-proj/assets/icons-Dy-5T8z3.svg#icon-x"></use>
+      </svg>
+    </button>
+  </div>
+
+    <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="#artists">Artists</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="#about">About Us</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+    <main>
+      <section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">Discover Your Next Favorite Artist Today</h1>
+      <h2 class="hero__text">Dive into a world of music discoveries with ArtistsHub – your personal guide to the boundless universe of sound. Explore, filter, and learn about your favorite artists all in one place.</h2>
+                <a href="#artists" class="hero__btn">
+            Explore Artists
+            <svg class="hero__btn-icon" width="24" height="24"><use href="/img/icons (2).svg#icon-right-arrow"></use></svg>
+          </a>
+          </div>
+<div class="hero__media"></div>
+
+    
+  </div>
+</section>
+
+      <section id="artists" class="artists">
+  <div class="container">
+    <div class="artists__content">
+      <div class="artists__text">
+        <h2 class="artists__title">Artists</h2>
+        <h3 class="artists__subtitle">Explore Your New Favorite Artists</h3>
+      </div>
+      <div class="artists__filters">
+        <div class="filters__titles">
+          <p class="filters__title">Filters</p>
+        </div>
+        <input type="text" class="artists__search" placeholder="Search" />
+        <select class="artists__select artists__genre-select">
+          <option value="">All genres</option>
+        </select>
+        <select class="artists__select artists__sort-select">
+          <option value="">Default</option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+        <button class="artists__reset">Reset</button>
+      </div>
+      <ul class="artists__list"></ul>
+      <div class="artists__empty hidden">
+        <div class="artists__empty-icon">!</div>
+
+        <h3 class="artists__empty-title">Silence on the stage...</h3>
+
+        <p class="artists__empty-text">
+          We couldn’t find any artists matching your search. Try adjusting your
+          filters or search term.
+        </p>
+
+        <button class="artists__empty-btn">Reset filters</button>
+      </div>
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
+      <button class="artists__button">
+        Load More
+        <svg class="artists__load-more-icon" width="24" height="24">
+          <use href="/Artists-proj/assets/icons-Dy-5T8z3.svg#icon-down-arrow-alt"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="modal-root" class="modal"></div>
+</section>
+
+      <section class="about" id="about">
+  <div class="about__container container">
+    <div class="about__content">
+
+      <picture class="about__picture">
+        <source media="(min-width: 1440px)" srcset="/Artists-proj/assets/pc-team-1x-BmoDrSFC.jpg 1x, /Artists-proj/assets/pc-team-2x-D-0SGd_N.jpg 2x" />
+        <source media="(min-width: 768px)" srcset="/Artists-proj/assets/tab-team-1x-DslHY1kT.jpg 1x, /Artists-proj/assets/tab-team-2x-DRdqakjV.jpg 2x" />
+        <source media="(max-width: 767px)" srcset="/Artists-proj/assets/mob-team-1x-B17eWSDg.jpg 1x, /Artists-proj/assets/mob-team-2x-D7RMm3cO.jpg 2x" />
+
+        <img class="about__img" src="../img/about/mob-team-1x.jpg" alt="our team" loading="lazy" />
+      </picture>
+
+      <div class="about__info">
+        <svg class="about__icon" width="64" height="64">
+          <use href="/Artists-proj/assets/b-logos-C8IjOK9L.svg#about-logo"></use>
+        </svg>
+        <h2 class="about__title">About ArtistsHub</h2>
+        <p class="about__text">
+          At ArtistsHub, our mission is to connect music lovers with the artists they adore.
+          We strive to create a vibrant community where discovering new music is as enjoyable
+          as listening to it.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+      <section class="feedback" id="reviews">
+  <div class="container feedback__container">
+
+    <div class="feedback__content">
+      <h2 class="visually-hidden">Feedbacks our visitors</h2>
+
+      <div class="feedback__card">
+
+        <div class="feedback__slider-box">
+          
+          <button class="feedback__nav feedback__nav--prev" type="button" aria-label="Previous feedback">
+            <span class="feedback__nav-icon" aria-hidden="true">←</span>
+          </button>
+         
+          <button class="feedback__nav feedback__nav--next" type="button" aria-label="Next feedback">
+            <span class="feedback__nav-icon" aria-hidden="true">→</span>
+          </button>
+
+          <!-- Feedback slider -->
+          <div class="feedback__slider swiper" aria-label="Feedback slider">
+            <ul class="feedback__wrapper swiper-wrapper" role="list">              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feedback pagination -->
+        <div class="feedback__pagination" aria-label="Feedback pagination">
+          <button class="feedback__dot feedback__dot--first is-active" type="button" aria-label="First slide"></button>
+          <button class="feedback__dot feedback__dot--middle" type="button" aria-label="Middle slides"></button>
+          <button class="feedback__dot feedback__dot--last" type="button" aria-label="Last slide"></button>
+        </div>
+
+         <!--Feedback button -->
+        <button class="feedback__leave-btn" type="button" aria-label="Leave feedback">
+          Leave feedback
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+  <div class="footer__container container">
+    <div class="footer__inner">
+      <a href="./" class="footer__logo">
+        <svg
+          class="footer__logo-icon footer__logo-icon--mobile"
+          width="84"
+          height="36"
+        >
+          <use href="/Artists-proj/assets/b-logos-C8IjOK9L.svg#f-mob-logo"></use>
+        </svg>
+
+        <svg
+          class="footer__logo-icon footer__logo-icon--desktop"
+          width="116"
+          height="45"
+        >
+          <use href="/Artists-proj/assets/b-logos-C8IjOK9L.svg#main-f-logo"></use>
+        </svg>
+      </a>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#artists" class="footer__nav-link">Artists</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#about" class="footer__nav-link">About us</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#reviews" class="footer__nav-link">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 ArtistsHub. All rights reserved.
+        </p>
+
+        <ul class="footer__socials">
+          <li class="footer__socials-item">
+            <a
+              href="https://www.instagram.com/"
+              class="footer__socials-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="40"
+                height="40"
+                class="footer__socials-icon footer__socials-icon--mobile"
+              >
+                <use href="/Artists-proj/assets/footer-icons-Du7Df5Ka.svg#Instagram-mob"></use>
+              </svg>
+
+              <svg
+                width="32"
+                height="32"
+                class="footer__socials-icon footer__socials-icon--tab"
+              >
+                <use href="/img/icons (2).svg#icon-Youtube"></use>
+              </svg>
+
+              <svg
+                width="24"
+                height="24"
+                class="footer__socials-icon footer__socials-icon--desktop"
+              >
+                <use href="/Artists-proj/assets/footer-icons-Du7Df5Ka.svg#Instagram-pc"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__socials-item">
+            <a
+              href="https://www.facebook.com/"
+              class="footer__socials-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="40"
+                height="40"
+                class="footer__socials-icon footer__socials-icon--mobile"
+              >
+                <use href="/Artists-proj/assets/footer-icons-Du7Df5Ka.svg#Facebook-mob"></use>
+              </svg>
+
+              <svg
+                width="32"
+                height="32"
+                class="footer__socials-icon footer__socials-icon--tab"
+              >
+                <use href="/img/icons (2).svg#icon-Facebook"></use>
+              </svg>
+
+              <svg
+                width="24"
+                height="24"
+                class="footer__socials-icon footer__socials-icon--desktop"
+              >
+                <use href="/Artists-proj/assets/footer-icons-Du7Df5Ka.svg#Facebook-pc"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__socials-item">
+            <a
+              href="https://www.youtube.com/"
+              class="footer__socials-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="40"
+                height="40"
+                class="footer__socials-icon footer__socials-icon--mobile"
+              >
+                <use href="/Artists-proj/assets/footer-icons-Du7Df5Ka.svg#Youtube-mob"></use>
+              </svg>
+
+              <svg
+                width="32"
+                height="32"
+                class="footer__socials-icon footer__socials-icon--tab"
+              >
+                <use href="/img/icons (2).svg#icon-Youtube"></use>
+              </svg>
+
+              <svg
+                width="24"
+                height="24"
+                class="footer__socials-icon footer__socials-icon--desktop"
+              >
+                <use href="/Artists-proj/assets/footer-icons-Du7Df5Ka.svg#Youtube-pc"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
