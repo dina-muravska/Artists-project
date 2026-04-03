@@ -51,7 +51,7 @@ import{i as g,a as F,R as x,S as H,N as C}from"./assets/vendor-Cg2OR-9q.js";(fun
           <blockquote class="feedback__quote">"No feedbacks yet."</blockquote>
           <p class="feedback__author">—</p>
         </li>
-      `,$(1),v(0,1);return}const t=e.slice(0,10);ve(t),$(t.length),re(r.wrapper),v(0,t.length)}catch{}}},ye="/Artists-proj/assets/icons-Dy-5T8z3.svg",Ae=()=>{const e=document.getElementById("modal-root");document.addEventListener("click",async t=>{const s=t.target.closest("[data-id]");if(!s)return;const n=s.dataset.id;e.innerHTML=`
+      `,$(1),v(0,1);return}const t=e.slice(0,10);ve(t),$(t.length),re(r.wrapper),v(0,t.length)}catch{}}},ye="/Artists-project/assets/icons-Dy-5T8z3.svg",Ae=()=>{const e=document.getElementById("modal-root");document.addEventListener("click",async t=>{const s=t.target.closest("[data-id]");if(!s)return;const n=s.dataset.id;e.innerHTML=`
       <div class="modal__content">
         <div class="modal__loader"></div>
       </div>
