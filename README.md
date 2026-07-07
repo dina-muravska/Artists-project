@@ -1,83 +1,89 @@
 # 🎵 ArtistsHub
 
-## 📖 Про проєкт
+## 📖 About the Project
 
-ArtistsHub — веб-застосунок для відкриття нових музичних виконавців. Користувачі
-можуть переглядати список артистів, читати їхні біографії, слухати музику та
-залишати відгуки.
+ArtistsHub is a web application for discovering new music artists. Users can browse a list of artists, read their biographies, listen to their music, and leave reviews.
 
-## 🛠️ Технології
+---
+
+## 🖼️ Preview
+
+<img width="1747" height="860" alt="image" src="https://github.com/user-attachments/assets/efb82809-d6e7-4313-80e2-f76c1a431d71" />
+
+---
+
+## 🛠️ Technologies
 
 - **HTML5** / **CSS3** / **JavaScript (ES6+)**
-- **Vite** — збірка проєкту
-- **SCSS** — препроцесор стилів
-- **Axios** — HTTP-запити
-- **Swiper.js** — слайдер для відгуків
-- **iziToast** — повідомлення
-- **Raty.js** — рейтинг зірками
-- **TUI Pagination** — пагінація (додаткове завдання)
+- **Vite** — project bundler
+- **SCSS** — CSS preprocessor
+- **Axios** — HTTP requests
+- **Swiper.js** — reviews slider
+- **iziToast** — notification library
+- **Raty.js** — star rating system
+- **TUI Pagination** — pagination (optional task)
 
-## 🚀 Як запустити проєкт
+## 🚀 Getting Started
 
-### Встановлення залежностей
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Запуск dev-сервера
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-### Збірка для продакшену
+### Build for production
 
 ```bash
 npm run build
 ```
 
-### Попередній перегляд збірки
+### Preview the production build
 
 ```bash
 npm run preview
 ```
 
-## 📁 Структура проєкту
+## 📁 Project Structure
 
-```
+```text
 src/
 ├── js/
-│   ├── api/          # API запити
-│   ├── components/   # Компоненти (модалки, картки)
-│   ├── sections/     # Логіка секцій
-│   ├── utils/        # Утиліти (loader, toast, modal)
-│   └── main.js       # Точка входу
+│   ├── api/          # API requests
+│   ├── components/   # Components (modals, cards)
+│   ├── sections/     # Section logic
+│   ├── utils/        # Utilities (loader, toast, modal)
+│   └── main.js       # Entry point
 ├── scss/
-│   ├── sections/     # Стилі секцій
-│   ├── components/   # Стилі компонентів
-│   ├── utils/        # Змінні, міксіни
-│   └── styles.scss   # Головний файл стилів
-├── partials/         # HTML-partials
-└── index.html        # Головна сторінка
+│   ├── sections/     # Section styles
+│   ├── components/   # Component styles
+│   ├── utils/        # Variables and mixins
+│   └── styles.scss   # Main stylesheet
+├── partials/         # HTML partials
+└── index.html        # Main page
 ```
 
-## 📋 Правила розробки
+## 📋 Development Guidelines
 
 ### Git Workflow
 
-- **Гілка `main`** — захищена, тільки через PR
-- **Назви гілок:** `feature/section-name`, `fix/bug-name`
-- Перед PR — перевір, що код запускається без помилок
+- **`main` branch** — protected, changes are allowed only through Pull Requests.
+- **Branch naming:** `feature/section-name`, `fix/bug-name`
+- Before creating a Pull Request, make sure the project builds and runs without errors.
 
-### Стандарти коду
+### Code Standards
 
-- **BEM** для класів CSS
-- **SCSS** для стилів (використовуй змінні з `_variables.scss`)
-- **Axios** для запитів (НІКОЛИ не використовуй `fetch`)
-- **ES6+** синтаксис (стрілкові функції, async/await)
+- Use **BEM** methodology for CSS class names.
+- Write styles using **SCSS** (use variables from `_variables.scss`).
+- Use **Axios** for all HTTP requests (**never use `fetch`**).
+- Follow **ES6+** syntax (arrow functions, async/await, etc.).
 
-### Перед commit
+### Before Committing
 
 ```bash
 npm run build
@@ -85,28 +91,24 @@ npm run build
 
 ## 🌐 API
 
-Бекенд: `https://sound-wave.b.goit.study/api`  
-Документація: [API Docs](https://sound-wave.b.goit.study/api-docs/)
+Backend: `https://sound-wave.b.goit.study/api`  
+Documentation: https://sound-wave.b.goit.study/api-docs/
 
-### Основні маршрути:
+### Available Endpoints
 
-- `GET /artists` — список артистів
-- `GET /artists/:id` — деталі артиста
-- `GET /artists/:id/albums` — альбоми артиста
-- `GET /feedbacks` — відгуки
-- `POST /feedbacks` — створити відгук
-- `GET /genres` — список жанрів
+- `GET /artists` — Get the list of artists
+- `GET /artists/:id` — Get artist details
+- `GET /artists/:id/albums` — Get an artist's albums
+- `GET /feedbacks` — Get all reviews
+- `POST /feedbacks` — Create a new review
+- `GET /genres` — Get the list of music genres
 
-## 👥 Команда
+## 👥 Team
 
 - **Team Lead:** [@INitosI](https://github.com/INitosI)
-- **Developer 1:** [Ім'я]
-- **Developer 2:** [Ім'я]
+- **Developer 1:** [Name]
+- **Developer 2:** [Name]
 
-## 📄 Ліцензія
+## 📄 License
 
-Цей проєкт створений для навчальних цілей.
-
-```
-
-```
+This project was created for educational purposes.
